@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap');
+
+
+body {
+  background: linear-gradient(135deg,#01111a, #45608d, #bcc6cb);
+
+}
+
+.register-container {
+  max-width: 450px;
+  margin: 80px auto;
+  padding: 40px 30px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 6px 40px rgba(198, 189, 189, 0.2);
+  font-family: 'Fredoka', sans-serif;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.register-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #444;
+  margin-bottom: 25px;
+  animation: bounceIn 1s ease-in-out;
+}
+
+
+@keyframes bounceIn {
+  0% { transform: scale(0.9); opacity: 0; }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+  color: #555;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+input {
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #3f51b5;
+  box-shadow: 0 0 8px rgba(63, 81, 181, 0.2);
+}
+
+button[type="button"] {
+  padding: 15px;
+  background-color: #2c3589; /* Green color */
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 20px; /* Space below the button */
+}
+
+button[type="button"]:hover {
+  background-color: #071308; /* Darker green on hover */
+  transform: scale(1.05);
+}
+
+button[type="submit"] {
+  padding: 15px;
+  background-color: #1c0c7a;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #050921;
+  transform: scale(1.05);
+}
+
+.success-box {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #3f51b5;
+  border-radius: 12px;
+  background-color: rgba(63, 81, 181, 0.1);
+  text-align: center;
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.success-box p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+/* .login-button {
+  padding: 12px 20px;
+  background-color: #00c853;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+}
+
+.login-button:hover {
+  background-color: #1b5e20;
+  transform: scale(1.05); */
+/* } */

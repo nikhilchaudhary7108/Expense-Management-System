@@ -1,0 +1,1 @@
+alert('You are entering he website ...');

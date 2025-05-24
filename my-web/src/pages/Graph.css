@@ -1,0 +1,102 @@
+.graphical-page {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #0f172a, #1e293b);
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.graphical-page h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #f8fafc;
+}
+
+.graphical-page .card {
+  background-color: #1e293b;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  transition: transform 0.2s ease;
+}
+
+.graphical-page .card:hover {
+  transform: scale(1.01);
+}
+
+.graphical-page .card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 0.95rem;
+}
+
+thead {
+  background-color: #334155;
+}
+
+thead th {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #475569;
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+tbody td {
+  padding: 12px;
+  border-bottom: 1px solid #475569;
+  color: #f1f5f9;
+}
+
+tbody tr:hover {
+  background-color: #293445;
+  transition: background-color 0.3s;
+}
+
+/* Space between charts and sections */
+.grid > div {
+  margin-bottom: 2rem;
+}
+
+/* Balance Box */
+.balance-box {
+  background: linear-gradient(135deg, #4ade80, #22c55e);
+  color: #1e293b;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(34, 197, 94, 0.3);
+  font-weight: 600;
+}
+
+.balance-box p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.balance-box span {
+  font-weight: bold;
+  color: #14532d;
+}
+
+/* Responsive spacing */
+@media (min-width: 768px) {
+  .graphical-page .grid {
+    gap: 2rem;
+  }
+
+  .graphical-page .grid-cols-1.md\:grid-cols-2.lg\:grid-cols-3 > div {
+    margin-bottom: 0;
+  }
+}
